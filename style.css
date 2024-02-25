@@ -1,0 +1,91 @@
+.image-box {
+    width: 450px; /* Set the width of the box */
+    height: 450px; /* Set the height of the box */
+    background-color: #ccc; /* Set the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 5px solid black;
+    border-radius: 30px;
+    transition: transform 0.3s; /* Add a transition for a smooth effect */
+}
+
+.image-box:hover img {
+    transform: scale(1.2); /* Zoom in the image on hover */
+}
+
+
+button {
+    height: 57x;
+    width: 200px;
+    
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#h1 {
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border: 5px solid black; /* Add border style, width, and color */
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color:maroon;
+    
+}
+
+
+#h2 {
+    color: white;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color:maroon;
+    font-size: 3rem;
+
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #000000, #5e0202, #ecefee);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+  }
+  
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .image-box {
+        width: 100vw; /* Set the width to full viewport width */
+        height: 90vw; /* Set the height to 60% of the viewport width */
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Center the image vertically */
+    }
+
+    .week h2 {
+        font-size: 4rem; /* Set the font size of the days of the week */
+        text-align: center;
+    }
+}
+
+
